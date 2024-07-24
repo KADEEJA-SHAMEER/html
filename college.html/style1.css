@@ -1,0 +1,26 @@
+.LOGO{
+    background-color:rgb(238, 255, 0);
+    font-size: 36px;
+
+}
+.mes{
+    background-color: aquamarine;
+    font-size: 24px; /* Set college name font size */
+  font-weight: bold; /* Set college name font weight */
+  color: #333; /* Set college name color */
+ width:100%;
+    
+}
+.abc{
+    display:flex;
+    width: 100%;
+}
+.img{
+      background-color: darkgray;
+}
+.efg{
+    display:flex;
+}
+.hij{
+    height: 100%;
+}
