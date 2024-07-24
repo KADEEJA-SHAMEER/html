@@ -24,3 +24,15 @@
 .hij{
     height: 100%;
 }
+.footter{
+    display:flex;
+    width: 100%;
+    background-color: darkgreen;
+}
+#p1{
+    width:50%;
+    align-content:right;
+}
+.p2{
+    width:50%;
+}
