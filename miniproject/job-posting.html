@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Job Title:</label>
+        <input type="text" name="job_title"><br><br>
+        <label>Job Description:</label>
+        <textarea name="job_description"></textarea><br><br>
+        <label>Job Type:</label>
+        <select name="job_type">
+          <option value="online">Online</option>
+          <option value="offline">Offline</option>
+        </select><br><br>
+        <label>Location (if offline):</label>
+        <input type="text" name="location"><br><br>
+        <label>Pay Rate:</label>
+        <input type="number" name="pay_rate"><br><br>
+        <input type="submit" value="Post Job">
+      </form>
+      
+      <!-- Display Job Postings -->
+      <h2>Job Postings</h2>
+      <ul>
+        <li>
+          <h3>Job Title: <span>Waiter</span></h3>
+          <p>Job Description: ...</p>
+          <p>Job Type: Offline</p>
+          <p>Location: New York</p>
+          <p>Pay Rate: $15/hour</p>
+          <button>Apply</button>
+        </li>
+        <li>
+          <h3>Job Title: <span>Content Writer</span></h3>
+          <p>Job Description: ...</p>
+          <p>Job Type: Online</p>
+          <p>Pay Rate: $25/hour</p>
+          <button>Apply</button>
+        </li>
+      </ul>
+</body>
+</html>

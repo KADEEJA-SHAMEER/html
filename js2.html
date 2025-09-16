@@ -1,0 +1,20 @@
+<html>
+    <head><title>to remove vowels</title></head>
+    <body>
+        <script type="text/javascript">
+            function vowelrem()
+            {
+            var str;
+            str=form1.mystr.value;
+            document.write("Before removing the vowels the string is '"+str+"'<br>");
+            var newstr=str.replace(/[aeiou]/gi, '');
+            document.write(" After removing the vowels the string is '"+newstr+"'");
+            }
+          
+        </script>
+        <form name="form1">
+           <input type="text" name="mystr" placeholder="enter a string" ><br><br>
+           <input type="button" onclick="vowelrem()" value="remove vowels">
+        </form>
+    </body>
+</html>
