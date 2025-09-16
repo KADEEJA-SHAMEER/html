@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:100%;
+            height: 100%;
+            background-image:url("calculator2.jpg");
+            background-size: cover;
+        }
+        .calc{
+            background-color: rgb(8, 8, 8);
+            margin-left: 500px;
+            width:30%;
+            height:300px;
+            border-radius: 8px;
+            padding: 40px;
+            margin-top: 100px;
+        }
+       label{
+        display: block;
+        color:white;
+        font-size: larger;
+       } 
+       input{
+        margin:20px;
+        padding:5px;
+        border-radius: 3px;
+        width:70%;
+        border:none;
+       }
+       button{
+        margin-left: 30px;
+        padding:6px;
+        border:none;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        width:15%;
+        background-color: rgb(35, 34, 34);
+        color:white;
+       }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="calc">
+        <label>Enter number 1: </label>
+        <input type="text" id="num1">
+        <label>Enter number 2: </label>
+        <input type="text" id="num2"><br>
+        <button type="button" onclick="Add()">Add</button>
+        <button type="button" onclick="subtract()">Subtract</button>
+        <button type="button" onclick="Div()">division</button>
+        <button type="button" onclick="mul()">multiply</button><br>
+        <label>Result is:</label>
+        <input type="text" id="param" readonly >
+        </div>
+    </form>
+    <script>
+        function Add()
+        {
+            let number1=parseInt(document.getElementById("num1").value);
+            let number2=parseInt(document.getElementById("num2").value);
+            document.getElementById("param").value=number1+number2;
+        }
+        function subtract()
+        {
+            let number1=parseInt(document.getElementById("num1").value);
+            let number2=parseInt(document.getElementById("num2").value);
+            document.getElementById("param").value=number1-number2;
+
+        }
+        function Div()
+        {
+            let number1=parseInt(document.getElementById("num1").value);
+            let number2=parseInt(document.getElementById("num2").value);
+            if (number2==0)
+           {
+             alert("Division by zero is not possible");
+           }
+           else{
+           document.getElementById("param").value=number1/number2;
+           }
+        }
+        function mul()
+        {
+            let number1=parseInt(document.getElementById("num1").value);
+            let number2=parseInt(document.getElementById("num2").value);
+            document.getElementById("param").value=number1*number2;
+        }
+    </script>
+</body>
+</html>

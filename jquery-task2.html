@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Enable/Disable Button</title>
+    <style>
+         body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000000;
+            flex-direction: column;
+        }
+        #submitBtn {
+            position: relative;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        input{
+            border: none;
+            padding: 5px;
+            margin:5%;
+            width:60%;
+            background-color: white;
+            border-radius: 3px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<form>
+    <input type="text" id="inputField" placeholder="Enter something..."><br>
+    <button type="submit" id="submitBtn" >Submit</button>
+</form>
+
+<script>
+$(document).ready(function() {
+    $('#submitBtn').on('mouseenter', function() {
+        let inputVal = $('#inputField').val().trim();
+
+       
+        if (inputVal === "") {
+            $('#submitBtn').prop('disabled', true);
+            $('#submitBtn').css({"background-color": "crimson", "font-size": ""});
+            let x = Math.random() * 200 - 100; 
+            let y = Math.random() * 200 - 100; 
+            
+            $(this).css('transform', `translate(${x}px, ${y}px)`);
+        }
+    });
+    
+    $('#inputField').on('input', function() {
+        if ($(this).val().trim() !== "") {
+            $('#submitBtn').css({'transform':'translate(0, 0)',"background-color": "red", "font-size": "larger"});
+            $('#submitBtn').prop('disabled', false);
+        }
+    });
+});
+</script>
+</body>
+</html> 
+
+

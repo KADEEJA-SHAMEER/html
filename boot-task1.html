@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="boot1.css">
+</head>
+<body>
+    <div class="top-bar bg-dark text-white ">
+        <div  class="container-fluid " >
+           <div class="row w-100 ">
+               <div class ="col-md-9 d-flex align-items-center">
+                  <a href="#" class="text-white me-3 ms-5 border-end border-light p-2 " style="text-decoration: none;"><i class="bi bi-person-fill"></i> Agent Login</a>
+                  <a href="#" class="text-white me-3 border-end border-light p-2" style="text-decoration: none;"><i class="bi bi-person-fill"></i> Customer Login</a>
+                  <a href="#" class="text-white me-3 border-end border-light p-2" style="text-decoration: none;">Not a Member? <span class="text-info ">Register</span></a>
+                  <span class="me-3 border-end border-light p-2">Call Us Now: 815-123-4567</span>
+               </div>
+               <div class ="col-md-3 d-flex align-items-center justify-content-end">
+                  <a href="#" class="text-white border-end border-start border-light p-2" style="text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="text-white border-end border-light p-2 " style="text-decoration: none;"><i class="bi bi-twitter "></i></a>
+                  <a href="#" class="text-white  border-end border-light p-2" style="text-decoration: none;"><i class="fab fa-tumblr"></i> </a>
+                  <a href="#" class="text-white  border-end border-light p-2" style="text-decoration: none;"><i class="bi bi-pinterest"></i></a>
+               </div>
+           </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light ">
+      <div class="container-fluid ms-5">
+       <div class="container ms-5">
+         <h3 class="text-primary">V<span class="text-info">O</span>YAGE</h4>
+       </div>
+       <div >
+        <ul class="navbar-nav">
+         <li class="nav-item "><a class="nav-link text-info" href="#">HOME</a></li>
+         <li class="nav-item"><a class="nav-link " href="#">DESTINATIONS</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">CRUSES</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">SPECIALS</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">HOLIDAYS</a></li>
+         <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+         <li class="nav-item"><a class="nav-link me-5" href="#"><i class="bi bi-search"></i></a></li>
+        </ul>
+       </div>
+      </div>
+    </nav>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image-carousel3.avif" alt="image1 " class="d-block w-100"style= "height: 600px; object-fit: cover;">
+        </div>
+        <div class="carousel-item ">
+          <img src="image-carousel.webp" alt="image2 " class="d-block w-100 " style= "height: 600px; object-fit: cover;">
+        </div>
+        <div class="carousel-item ">
+          <img src="image-carousel2.jpg" alt="image3 " class="d-block w-100" style= "height: 600px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="carousel-text">
+        <h3>TO TRAVEL IS TO LIVE</h3>
+        <p>You Don't Need Magic to Disappear,All you need is a destination.</p>
+        <button type="submit" id="button1">SHOW ON THE MAP</button>
+        <button type="submit" id="button2">MORE INFO</button>
+      </div>
+      <div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev" ><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next " type="button" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>  
+      </div>
+    </div>
+    <form class="container-fluid bg-dark text-white p-3 ">
+      <div class="row align-items-center container-fluid ">
+          <div class="col-md-2 d-flex justify-content-end border-end border-light"><label >FIND YOUR <br><strong>HOLIDAYS</strong></label></div>
+          <div class="col-md-2 d-flex justify-content-end"><label>where</label></div>
+          <div class="col-md-2"><input type="text" class="form-control" placeholder="Destination" name="destination"style="width:250PX;"></input></div>
+          <div class="col-md-2 d-flex justify-content-end"><label>when</label></div>
+          <div class="col-md-2"><input type="date" class="form-control " placeholder="select date" name="date" style="width:250PX;"></div>
+          <div class="col-md-2"><button class="btn btn-info ms-5">Search</button></div>
+      </div>
+    </form>
+    <div class="container-fluid py-5 text-center ">
+     <h5 class="mb-1 text-center">SPECIAL OFFERS</h5>
+     <p class="mb-4 text-muted">Best 2014 packages where people love to stay!</p>
+     <div class="carousel-wrapper">
+      <div class="carousel-track" id="carousel">
+      <!-- Cards -->
+       <div class="offer-card bg-light">
+        <img src="card1.jpeg" alt="Statue_of_Liberty">
+        <div class="card-body text-center">
+           <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card1" class="border border-0">Statue of Liberty - USA</button>
+           <div id="card1" class="collapse">New Destination!In 1865, 
+              a French political intellectual
+              and anti-slavery activist named Edouard de Laboulaye proposed that a 
+              statue representing liberty be built for the United States.
+            </div>
+        </div>
+       </div>
+       <div class="offer-card bg-light">
+        <img src="trevi-fountain.jpg" alt="trevi-fountain">
+        <div class="card-body text-center">
+           <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card2" class="border border-0">Trevi Fountian - Rome</button>
+            <div id="card2" class="collapse">The Trevi Fountain is an 18th-century fountain in the Trevi district in Rome, Italy, designed 
+              by Italian architect Nicola Salvi and completed by Giuseppe Pannini in 1762 and several others
+            </div>
+        </div>
+       </div>
+       <div class="offer-card bg-light">
+        <img src="card3.jpg" alt="Hong Kong and Macau">
+        <div class="card-body text-center">
+             <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card3" class="border border-0">hong Kong and Macau</button>
+             <div id="card3" class="collapse">Hong Kong and Macau are two distinct Special Administrative Regions of China, located at 
+                opposite sides of the Pearl River Delta
+             </div>
+        </div>
+       </div>
+       <div class="offer-card bg-light">
+        <img src="card4.jpeg" alt="Eiffel Tower">
+        <div class="card-body text-center">
+           <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card4" class="border border-0">Eiffel Tower</button>
+           <div id="card4" class="collapse">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France.
+                  It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889
+           </div>
+        </div>
+       </div>
+       <div class="offer-card bg-light">
+        <img src="card5.jpg" alt="South Mountain">
+        <div class="card-body text-center">
+           <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card5" class="border border-0"> South Mountain (Phoenix, Arizona)</button>
+            <div id="card5" class="collapse"> South Mountain (Phoenix, Arizona) This is one of the largest municipal parks in the country, located in Phoenix, 
+                Arizona, offering hiking, horseback riding, scenic drives, and the Mystery Castle. 
+            </div>
+        </div>
+       </div>
+       <div class="offer-card bg-light">
+        <img src="card6.webp" alt="Dubai">
+        <div class="card-body text-center">
+          <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card6" class="border border-0"> Dubai</button>
+          <div id="card6" class="collapse"> Dubai is the most populous city in the United Arab Emirates and the capital of the Emirate of Dubai.
+          </div>
+        </div>
+       </div>
+       <div class="offer-card bg-light">
+        <img src="card7.jpg" alt="Maldives">
+        <div class="card-body text-center">
+          <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card7" class="border border-0"> Maldives</button>
+          <div id="card7" class="collapse">Maldives—which is known for its stunning white sands, bright blue waters and incredible sunsets. 
+          </div>
+        </div>
+       </div>
+       <div class="offer-card bg-light">
+        <img src="card8.webp" alt="Niagara Falls">
+        <div class="card-body text-center">
+          <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card8" class="border border-0"> Niagara falls</button>
+          <div id="card8" class="collapse">  Niagara Falls-The thundering waters at the border of Canada and the United States never fail to mesmerize visitors, providing an unforgettable bucket list experience.
+          </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+  <div class="container-fluid" id="page3">
+    <div class="page4 text-center">
+      <h3>HOLIDAYS TYPE</h3>
+      <p>get explore your dream to travel the world</p>
+      <img src="icons1.png"alt="nothinggg"class="img-fluid" id="img2" style="margin-top: 50px;">
+    </div>
+  </div>
+  <div class="container-fluid text-dark page5 p-3">
+    <div class="page6">
+      <h3>HAPPY CLIENTS</h3>
+      <p>What customer say about us and why love our services!</p>
+    </div>
+    <div class="d-flex">
+      <div class="card page7 ms-4">
+        <div class="card-body">
+          <p class="card-text text-muted">This was our second holiday with Travel on line, 
+            it was a great experience from start to finish, we would certainly recommend 
+            Travel on line to anyone looking to travel. It was everything that we expected,
+            looking forward to our next adventure with TOL. Thank you.
+          </p>
+          <h4 class="card-title text-info">Kenneth Desmond Mathews </h4>
+        </div>
+      </div>
+      <div class="card page7 ms-4">
+        <div class="card-body">
+          <p class="card-text text-muted">This was our second holiday with Travel on line, 
+            it was a great experience from start to finish, we would certainly recommend 
+            Travel on line to anyone looking to travel. It was everything that we expected,
+            looking forward to our next adventure with TOL. Thank you.
+          </p>
+          <h4 class="card-title text-info">Kenneth Desmond Mathews </h4>
+        </div>
+      </div>
+      <div class="card page7 ms-4">
+        <div class="card-body">
+          <p class="card-text text-muted">This was our second holiday with Travel on line, 
+            it was a great experience from start to finish, we would certainly recommend 
+            Travel on line to anyone looking to travel. It was everything that we expected,
+            looking forward to our next adventure with TOL. Thank you.
+          </p>
+          <h4 class="card-title text-info">Kenneth Desmond Mathews </h4>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="container-fluid bg-dark py-5 d-flex">
+    <div class="text-white ms-5 me-5">
+       <h3 class="text-info">Newsletter</h3>
+       <p>This was our second holiday with Travel <br>
+         on line,it was a great experience from  <br>
+        start to finish, we would certainly recommend </p>
+       <input type="text" placeholder="subscribers" class="p-1 border border-0 rounded">
+       <button type="submit" class="btn btn-info  border border-0 p-1">GO</button>
+    </div>
+    <div class="text-white me-5">
+       <h3 class="text-info">Latest News</h3>
+       <div class="d-flex align-items-center mb-3">
+         <img src="card4.jpeg" class="rounded me-3" width="40" height="40" alt="News 1">
+         <div>
+           <p class="text-white text-decoration-none mb-1">Post Format Gallery: Multiple images</p>
+           <p class="small text-secondary text-info">October 21, 2013 - 3:31 pm</p>
+         </div>
+       </div>
+       <div class="d-flex align-items-center">
+         <img src="card3.jpg" class="rounded me-3" width="40" height="40" alt="News 2">
+          <div>
+            <p class="text-white text-decoration-none mb-1">Snowboarding is fun!</p>
+            <p class="small text-secondary text-info">December 12, 2013 - 5:11 pm</p>
+          </div>
+       </div>
+    </div>
+    <div class="text-white me-5">
+       <h3 class="text-info">Tags</h3>
+       <div class="py-2">
+         <button class="btn btn-outline-light mb-1">Agent Login</button>
+         <button class="btn btn-outline-light mb-1">Customer Login</button><br>
+         <button class="btn btn-outline-light mb-1">Not a member?</button>
+         <button class="btn btn-outline-light mb-1">Contact</button><br>
+         <button class="btn btn-outline-light mb-1">New Horizons</button>
+         <button class="btn btn-outline-light mb-1">Landscape</button>
+         <button class="btn btn-outline-light mb-1">Tags</button><br>
+         <button class="btn btn-outline-light mb-1">Nice</button>
+         <button class="btn btn-outline-light mb-1">Stone</button>
+         <button class="btn btn-outline-light mb-1">Portrait</button>
+       </div>
+    </div>
+    <div class="text-white bg-dark">
+      <h3 class="text-info">Address</h3>
+<pre class="text-white">
+DieSachbearbeiter Schönhauser Allee
+167c, 10435 Berlin Germany
+<span class="text-info">E-mail:</span> monig@blindtextgenerator.de</pre>
+      <div>
+        <i class="fab fa-facebook-f me-3"></i>
+        <i class="bi bi-twitter me-3"></i>
+        <i class="fab fa-tumblr me-3"></i>
+        <i class="bi bi-pinterest me-3"></i>
+      </div>                    
+    </div>
+  </div>
+</body>
+</html> 

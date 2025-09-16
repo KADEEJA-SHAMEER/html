@@ -1,0 +1,278 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .scroll-container {
+    display: flex;
+    gap: 20px; /* space between cards */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+.offer-card {
+    flex: 0 0 calc(20% - 15px); /* 5 cards per row (20% width each) */
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: filter 0.3s ease;
+cursor: pointer;
+      transition: transform 0.3s ease;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+}
+.offer-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Blur all cards initially */
+.scroll-container .offer-card {
+    filter: blur(2px);
+}
+
+/* Remove blur on hover */
+.scroll-container .offer-card:hover {
+    filter: blur(0px);
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+    </style>
+</head>
+<body> 
+  <div class="container py-5 text-ce nter">
+    <h5 class="mb-1">SPECIAL OFFERS</h5>
+    <p class="mb-4 text-muted">Best 2014 packages where people love to stay!</p>
+    <div class="scroll-container">
+      <div class="col">
+                  <div class="offer-card bg-light m"><img src="card1.jpeg" alt="Statue_of_Liberty">
+                     <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card1" class="border border-0">Statue of Liberty - USA</button>
+                        <div id="card1" class="collapse">New Destination!In 1865, 
+                          a French political intellectual
+                          and anti-slavery activist named Edouard de Laboulaye proposed that a 
+                          statue representing liberty be built for the United States.
+                        </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="offer-card bg-light"><img src="trevi-fountain.jpg" alt="trevi-fountain">
+                     <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card2" class="border border-0">Trevi Fountian - Rome</button>
+                        <div id="card2" class="collapse">The Trevi Fountain is an 18th-century fountain in the Trevi district in Rome, Italy, designed 
+                          by Italian architect Nicola Salvi and completed by Giuseppe Pannini in 1762 and several others
+                        </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="offer-card bg-light"><img src="card3.jpg" alt="Hong Kong and Macau">
+                     <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card3" class="border border-0">hong Kong and Macau</button>
+                        <div id="card3" class="collapse">Hong Kong and Macau are two distinct Special Administrative Regions of China, located at 
+                          opposite sides of the Pearl River Delta
+                        </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="offer-card bg-light"><img src="card4.jpeg" alt="Eiffel Tower">
+                     <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card4" class="border border-0">Eiffel Tower</button>
+                        <div id="card4" class="collapse">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France.
+                           It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889
+                        </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="offer-card bg-light"><img src="card5.jpg" alt="South Mountain">
+                     <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card5" class="border border-0"> South Mountain (Phoenix, Arizona)</button>
+                        <div id="card5" class="collapse"> South Mountain (Phoenix, Arizona) This is one of the largest municipal parks in the country, located in Phoenix, 
+                          Arizona, offering hiking, horseback riding, scenic drives, and the Mystery Castle. 
+                        </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="offer-card bg-light"><img src="card6.webp" alt="Dubai">
+                     <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card6" class="border border-0"> Dubai</button>
+                        <div id="card6" class="collapse"> Dubai is the most populous city in the United Arab Emirates and the capital of the Emirate of Dubai.
+                        </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="offer-card bg-light"><img src="card7.jpg" alt="Maldives">
+                     <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card7" class="border border-0"> Maldives</button>
+                        <div id="card7" class="collapse">Maldives—which is known for its stunning white sands, bright blue waters and incredible sunsets. 
+                        </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="offer-card bg-light"><img src="card8.webp" alt="Niagara Falls">
+                     <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card8" class="border border-0"> Niagara falls</button>
+                        <div id="card8" class="collapse">  Niagara Falls-The thundering waters at the border of Canada and the United States never fail to mesmerize visitors, providing an unforgettable bucket list experience.
+                        </div>
+                  </div>
+              </div>
+    </div>
+</div>
+
+    
+
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wheel-Style Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-wrapper {
+      overflow: hidden;
+      overflow-x: auto;
+    }
+
+    .carousel-track {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      padding: 20px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    
+    .carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    
+.offer-card {
+      flex: 0 0 auto;
+      width: 200px;
+      margin-right: 40px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border-radius: 5px;
+      position: relative;
+      column-gap: 50px;
+      scroll-snap-align: start;
+    }
+    
+    .offer-card:hover {
+      transform: scale(1.20);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .offer-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid py-5 text-center ">
+    <h5 class="mb-1 text-center">SPECIAL OFFERS</h5>
+    <p class="mb-4 text-muted">Best 2014 packages where people love to stay!</p>
+    <div class="carousel-wrapper">
+    <div class="carousel-track" id="carousel">
+      <!-- Cards -->
+      <div class="offer-card bg-light">
+       <img src="card1.jpeg" alt="Statue_of_Liberty">
+        <div class="card-body text-center">
+          <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card1" class="border border-0">Statue of Liberty - USA</button>
+            <div id="card1" class="collapse">New Destination!In 1865, 
+              a French political intellectual
+              and anti-slavery activist named Edouard de Laboulaye proposed that a 
+              statue representing liberty be built for the United States.
+            </div>
+        </div>
+      </div>
+      <div class="offer-card bg-light">
+       <img src="trevi-fountain.jpg" alt="trevi-fountain">
+        <div class="card-body text-center">
+           <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card2" class="border border-0">Trevi Fountian - Rome</button>
+            <div id="card2" class="collapse">The Trevi Fountain is an 18th-century fountain in the Trevi district in Rome, Italy, designed 
+              by Italian architect Nicola Salvi and completed by Giuseppe Pannini in 1762 and several others
+            </div>
+        </div>
+      </div>
+      <div class="offer-card bg-light">
+       <img src="card3.jpg" alt="Hong Kong and Macau">
+        <div class="card-body text-center">
+            <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card3" class="border border-0">hong Kong and Macau</button>
+              <div id="card3" class="collapse">Hong Kong and Macau are two distinct Special Administrative Regions of China, located at 
+                opposite sides of the Pearl River Delta
+              </div>
+        </div>
+      </div>
+      <div class="offer-card bg-light">
+        <img src="card4.jpeg" alt="Eiffel Tower">
+        <div class="card-body text-center">
+           <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card4" class="border border-0">Eiffel Tower</button>
+              <div id="card4" class="collapse">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France.
+                  It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889
+              </div>
+        </div>
+      </div>
+      <div class="offer-card bg-light">
+       <img src="card5.jpg" alt="South Mountain">
+        <div class="card-body text-center">
+           <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card5" class="border border-0"> South Mountain (Phoenix, Arizona)</button>
+              <div id="card5" class="collapse"> South Mountain (Phoenix, Arizona) This is one of the largest municipal parks in the country, located in Phoenix, 
+                Arizona, offering hiking, horseback riding, scenic drives, and the Mystery Castle. 
+              </div>
+        </div>
+      </div>
+      <div class="offer-card bg-light">
+       <img src="card6.webp" alt="Dubai">
+        <div class="card-body text-center">
+          <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card6" class="border border-0"> Dubai</button>
+              <div id="card6" class="collapse"> Dubai is the most populous city in the United Arab Emirates and the capital of the Emirate of Dubai.
+              </div>
+        </div>
+      </div>
+      <div class="offer-card bg-light">
+        <img src="card7.jpg" alt="Maldives">
+        <div class="card-body text-center">
+           <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card7" class="border border-0"> Maldives</button>
+              <div id="card7" class="collapse">Maldives—which is known for its stunning white sands, bright blue waters and incredible sunsets. 
+              </div>
+        </div>
+      </div>
+      <div class="offer-card bg-light">
+        <img src="card8.webp" alt="Niagara Falls">
+        <div class="card-body text-center">
+          <button  type="submit" data-bs-toggle="collapse" data-bs-target="#card8" class="border border-0"> Niagara falls</button>
+            <div id="card8" class="collapse">  Niagara Falls-The thundering waters at the border of Canada and the United States never fail to mesmerize visitors, providing an unforgettable bucket list experience.
+            </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

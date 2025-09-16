@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="head">
+        <h1 id="hd1">Xtra</h1>
+        <h1 id="hd2">Form</h1>
+        </div>
+        <p class="p1">Bootstrap 3 Xtra Form</p>
+        <div class="box2">
+            <form >
+                <p id="signup">Sign up</p>
+
+                <label class="labelling">Username</label>
+                <input type="text" class="inputbox" placeholder="Username" id="username"><br>
+
+                <label class="labelling">Email</label>
+                <input type="email"class='inputbox' placeholder="Email" id="email"><br>
+
+                <label class="labelling">Password</label>
+                <input type="password"class="inputbox" placeholder="Password" id="pasw"><br>
+
+                <label class="labelling">Retype password</label>
+                <input type="password" class="inputbox" placeholder="Retype password" id="rpasw"><br>
+
+                <input type="checkbox" id="checkbox">
+                <label  id='checklabel'>Accept the terms and policies</label><br>
+
+                <button type="submit" id="signup2" onclick="return validateform()">SIGN UP</button>
+                <hr>
+                <p id="p2">Already have an account?</p>
+                <button type="submit" id="signin">SIGN IN</button>
+            </form>
+        </div>
+    </div>
+    <script>
+       function validateform()
+       {
+         let username=document.getElementById("username").value.trim();
+         let email=document.getElementById("email").value.trim();
+         let password=document.getElementById("pasw").value;
+         let repassword=document.getElementById("rpasw").value;
+         let checkbox = document.getElementById("checkbox").checked;
+
+         if(!username || !email || !password || !repassword )
+         {
+            alert("please fill in all box");
+            return false;
+         }
+         let userpattern=/^[a-zA-Z0-9]{8,}$/;
+         if(!userpattern.test(username))
+         {
+            alert("Username must be at least 3 characters and contain only letters and numbers.");
+            return false;
+         }
+         let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+         if (!emailPattern.test(email))
+         {
+          alert("Please enter a valid email address.");
+          return false;
+         }
+         let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+         if (!passwordPattern.test(password))
+         {
+          alert("Password must be at least 8 characters long and include:\n- 1 uppercase letter\n- 1 lowercase letter\n- 1 number\n- 1 special character");
+          return false;
+         }
+         if (password !== repassword)
+         {
+          alert("Passwords do not match.");
+          return false;
+         }
+         if (!checkbox)
+         {
+         alert("You must accept the terms and policies.");
+         return false;
+         }
+         alert("Signup successful!");
+         return true;
+       }
+    </script>
+</body>
+</html>
